@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-expressions */
 import { useState, useEffect } from "react";
 
-const SCROLL_UP = false;
-const SCROLL_DOWN = true;
+const SCROLL_UP = true;
+const SCROLL_DOWN = false;
 
 const useScrollDirection = ({
   initialDirection,

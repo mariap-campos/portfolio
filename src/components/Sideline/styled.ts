@@ -70,18 +70,13 @@ export const Nav = styled.nav`
 
     &:hover {
       transition: all 0.25s ease-out;
-      transform: scale(1.1);
+      transform: translateY(-3px);
       color: var(--green);
-
-      &:nth-of-type(1),
-      &:nth-of-type(3) {
-        background: var(--green);
-      }
     }
   }
 
-  .round {
+  /* .round {
     background: var(--light);
     border-radius: 60px;
-  }
+  } */
 `;

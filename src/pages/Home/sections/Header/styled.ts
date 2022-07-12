@@ -1,10 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const HeaderWrapper = styled.header`
+interface HeaderWrapperProps {
+  scrolledToTop: boolean;
+  showNav: boolean;
+}
+
+export const HeaderWrapper = styled.header<HeaderWrapperProps>`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
   width: 100vw;
   transition: all 0.3s ease;
   padding: 30px 30px 30px 0;
@@ -12,6 +17,32 @@ export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  backdrop-filter: blur(10px);
+  background: rgba(26, 26, 28, 0.8);
+  padding: 10px 30px 10px 0;
+
+  &::before {
+    width: 100% !important;
+    transition: width 0.25s ease-out;
+  }
+
+  ${(props) =>
+    props.scrolledToTop &&
+    css`
+      backdrop-filter: none;
+      background: transparent !important;
+      padding: 30px 30px 30px 0;
+
+      img {
+        width: 220px !important;
+      }
+
+      &::before {
+        width: 0% !important;
+        transition: width 0.25s ease-out;
+      }
+    `};
 
   &::before {
     content: "";
@@ -22,20 +53,6 @@ export const HeaderWrapper = styled.header`
     height: 2px;
     background-color: var(--light);
     transition: width 0.25s ease-out;
-  }
-
-  &.active::before {
-    width: 120%;
-    transition: width 0.25s ease-out;
-  }
-
-  &.active {
-    background: var(--black);
-    padding: 10px 30px 10px 0;
-
-    img {
-      width: 140px;
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -49,7 +66,7 @@ export const LogoWrapper = styled.div`
   img {
     transition: all 0.3s ease;
     margin-left: 10px;
-    width: 220px;
+    width: 120px;
   }
 `;
 
@@ -75,33 +92,18 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavLink = styled.button`
+export const NavLink = styled.a`
   background: none;
   border: none;
   font-weight: 800;
-  font-size: 18px;
+  color: var(--light);
+  font-size: 16px;
   line-height: 20px;
   transition: all 0.3s ease;
   margin-left: 30px;
   padding-bottom: 5px;
   position: relative;
   letter-spacing: 2px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--green);
-    transition: width 0.25s ease-out;
-  }
-
-  &:hover::before {
-    width: 100%;
-    transition: width 0.25s ease-out;
-  }
 
   &:hover {
     transition: all 0.3s ease;

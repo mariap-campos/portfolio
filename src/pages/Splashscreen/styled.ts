@@ -7,7 +7,7 @@ export const Splash = styled.div`
   top: 0;
   left: 0;
   background: var(--black);
-  z-index: 4;
+  z-index: 15;
   overflow-y: clip;
   justify-content: center;
   display: flex;

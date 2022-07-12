@@ -1,8 +1,9 @@
 :root {
   /* --black: #191720; */
-  --black: #141415;
+  --black: #1a1a1c;
   --dark-grey: #29282c;
   --grey: #9d9ca0;
+  /* --grey: #8e8d91da; */
   --light: #d9d9d9;
   --green: #77b296;
 }
@@ -17,6 +18,34 @@ h1 {
   font-size: 4rem;
   font-family: "Inria Sans", sans-serif;
   color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+  position: relative;
+  transition: width 0.25s ease-out;
+  display: inline-flex;
+}
+
+a:hover {
+  color: var(--green);
+  transition: width 0.25s ease-out;
+}
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  transition: width 0.25s ease-out;
+}
+
+a:hover::before {
+  width: 100%;
+  transition: width 0.25s ease-out;
 }
 
 h2 {
@@ -36,6 +65,17 @@ body,
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 55%;
 }
 
 body {

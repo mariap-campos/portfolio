@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Line from "../../../../components/Line";
 import logo from "../../../../assets/img/mLogo.png";
 
@@ -11,10 +11,24 @@ interface HeaderProps {
 function Header({ showNav }: HeaderProps) {
   const nav = ["about", "work", "skills", "contact"];
 
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+
+  const handleScroll = () => {
+    setScrolledToTop(window.pageYOffset < 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <S.HeaderWrapper className={showNav ? "active" : ""}>
+    <S.HeaderWrapper scrolledToTop={scrolledToTop} showNav={showNav}>
       <S.LogoWrapper>
-        <Line end width={100} />
+        <Line end width="100px" />
         <img src={logo} alt="<m/>" />
       </S.LogoWrapper>
       <S.Nav>

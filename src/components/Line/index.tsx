@@ -6,8 +6,8 @@ interface LineProps {
   start?: boolean;
   horizontal?: boolean;
   end?: boolean;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
 }
 
 function Line({ start, end, width, height, horizontal }: LineProps) {
@@ -16,8 +16,8 @@ function Line({ start, end, width, height, horizontal }: LineProps) {
       // width={width}
       // height={height}
       style={{
-        width: `${width}px`,
-        height: `${height}px`,
+        width,
+        height,
         animationName: horizontal ? "growWidth" : "growHeight",
       }}
       className="line"
@@ -26,14 +26,14 @@ function Line({ start, end, width, height, horizontal }: LineProps) {
         <BsFillDiamondFill
           size={8}
           className="start"
-          style={{ left: height! > 1 ? "-3.5px" : "unset" }}
+          style={{ left: height! === "1px" ? "unset" : "-3.5px" }}
         />
       )}
       {end && (
         <BsFillDiamondFill
           size={8}
           className="end"
-          style={{ left: height! > 1 ? "-3.5px" : "unset" }}
+          style={{ left: height! === "1px" ? "unset" : "-3.5px" }}
         />
       )}
     </S.LineWrapper>
@@ -44,8 +44,8 @@ Line.defaultProps = {
   start: false,
   end: false,
   horizontal: true,
-  width: 1,
-  height: 1,
+  width: "1px",
+  height: "1px",
 };
 
 export default Line;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface LineWrapperProps {
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
 }
 
 export const LineWrapper = styled.div<LineWrapperProps>`
@@ -29,7 +29,7 @@ export const LineWrapper = styled.div<LineWrapperProps>`
       opacity: 0;
     }
     70% {
-      width: ${(props) => props.width}px;
+      width: ${(props) => props.width};
       opacity: 1;
     }
   }
@@ -40,7 +40,7 @@ export const LineWrapper = styled.div<LineWrapperProps>`
       opacity: 0;
     }
     70% {
-      height: ${(props) => props.height}px;
+      height: ${(props) => props.height};
       opacity: 1;
     }
   }

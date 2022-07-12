@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./sections/Header";
 import { useScrollDirection } from "../../hooks";
 import Sideline from "../../components/Sideline";
+import Introduction from "./sections/Introduction";
 import AboutMe from "./sections/AboutMe";
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
     <>
       <Sideline />
       <Header showNav={scrollDirection} />
+      <Introduction />
       <AboutMe />
     </>
   );
