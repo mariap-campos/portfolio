@@ -13,6 +13,11 @@ export const IntroductionWrapper = styled.section`
     animation: float 20s ease infinite;
   }
   @media screen and (max-width: 768px) {
+    overflow-x: clip;
+
+    .floatingSquare {
+      position: fixed;
+    }
   }
 
   @keyframes float {

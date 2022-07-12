@@ -12,8 +12,6 @@ export const AboutMeWrapper = styled.section`
     transform: rotate(45deg);
     animation: float 20s ease infinite;
   }
-  @media screen and (max-width: 768px) {
-  }
 
   @keyframes float {
     0% {
@@ -48,9 +46,6 @@ export const Container = styled.div`
     font-size: 18px;
     color: var(--grey);
   }
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const Title = styled.div`
@@ -59,6 +54,10 @@ export const Title = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 80%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   > p {
     font-weight: bold;
@@ -78,19 +77,33 @@ export const Info = styled.div`
   display: flex;
   margin-top: 40px;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
   img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
   }
 
   > div {
     text-align: justify;
     margin-left: 40px;
     font-size: 16px;
-    /* font-weight: bold; */
     color: var(--grey);
     line-height: 25px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+    }
 
     .header {
       font-weight: bold;
@@ -110,7 +123,14 @@ export const Info = styled.div`
 
     div {
       svg {
+        cursor: pointer;
+        transition: all 0.25s ease-out;
         margin-right: 10px;
+
+        &:hover {
+          transition: all 0.25s ease-out;
+          transform: translateY(-3px);
+        }
       }
     }
   }

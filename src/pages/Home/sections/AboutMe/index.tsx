@@ -13,14 +13,16 @@ import Line from "../../../../components/Line";
 import avatar from "../../../../assets/img/avatar.jpg";
 
 import * as S from "./styled";
+import useWindowSize from "../../../../hooks/useWindowSize";
 
 function AboutMe() {
+  const { width } = useWindowSize();
   return (
     <S.AboutMeWrapper className="section" id="about">
       {/* <div className="floatingSquare" /> */}
       <S.Container className="container">
         <S.Title>
-          <Line end width="80%" />
+          <Line end width={width! > 768 ? "80%" : "60%"} />
           <p>
             <strong>01. </strong>about me
           </p>
@@ -63,13 +65,6 @@ function AboutMe() {
             </div>
           </div>
         </S.Info>
-        {/* <strong>Hello, there! i&apos;m</strong>
-        <h1>Maria P. Campos</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
-        </p> */}
       </S.Container>
     </S.AboutMeWrapper>
   );
