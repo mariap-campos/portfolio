@@ -1,0 +1,102 @@
+:root {
+  /* --black: #191720; */
+  --black: #141415;
+  --dark-grey: #29282c;
+  --grey: #9d9ca0;
+  --light: #d9d9d9;
+  --green: #77b296;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Inria Sans", sans-serif;
+  color: var(--light);
+}
+
+h2 {
+  color: var(--light);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+html,
+body,
+#root {
+  color: var(--light);
+  overflow-x: hidden;
+
+  height: 2000px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: var(--dark-grey);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.6rem Inria Sans;
+  color: var(--light);
+}
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 700px) {
+  /* .container {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 25px 0px;
+  } */
+}
+
+/* ANIMATIONS */
+
+@keyframes slide {
+  0% {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes linearwipe {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
