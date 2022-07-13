@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeWrapper = styled.section`
+export const ContactWrapper = styled.section`
   .floatingSquare {
     background: var(--black);
     position: absolute;
@@ -58,7 +58,6 @@ export const Title = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -88,85 +87,47 @@ export const Info = styled.div`
     align-items: center;
   }
 
-  .avatar {
-    width: 300px;
-    height: 300px;
-    position: relative;
-
-    @media screen and (max-width: 768px) {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  .avatar::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 325px;
-    height: 325px;
-    border-radius: 50%;
-    border: 1px solid var(--light);
-
-    @media screen and (max-width: 768px) {
-      width: 270px;
-      height: 270px;
-    }
-  }
-
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    position: relative;
-
-    @media screen and (max-width: 768px) {
-      width: 250px;
-      height: 250px;
-      margin-bottom: 20px;
-    }
-  }
-
   > div {
+    width: 80%;
+    margin: 0 auto;
     text-align: justify;
-    margin-left: 40px;
     font-size: 16px;
     color: var(--grey);
-    line-height: 25px;
-
+    text-align-last: center;
     @media screen and (max-width: 768px) {
-      margin-left: 0px;
-      margin-top: 25px;
+      margin: 0 25px 0 0;
     }
 
-    .header {
-      font-weight: bold;
-
-      svg {
-        margin: 0 5px;
-      }
+    h1 {
+      text-align: center;
+      margin: 10px 0 50px;
     }
 
     p {
-      margin-bottom: 20px;
+      line-height: 25px;
 
       a {
         color: var(--green);
       }
     }
 
-    div {
-      svg {
-        cursor: pointer;
-        transition: all 0.25s ease-out;
-        margin-right: 10px;
+    .button {
+      transition: all 0.3s ease;
+      border: 2px solid var(--green);
+      margin: 50px auto;
+      background: none;
+      font-weight: 800;
+      color: var(--green);
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      letter-spacing: 2px;
 
-        &:hover {
-          transition: all 0.25s ease-out;
-          transform: translateY(-3px);
-        }
+      &:hover {
+        transition: all 0.3s ease;
+        background: var(--green);
+        color: var(--dark-grey);
+        cursor: pointer;
       }
     }
   }

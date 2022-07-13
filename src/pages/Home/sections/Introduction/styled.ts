@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const IntroductionWrapper = styled.section`
+  height: 100vh !important;
+  margin: 0 !important;
   .floatingSquare {
     background: var(--black);
     position: absolute;
-    width: 345px;
-    height: 345px;
+    width: 400px;
+    height: 400px;
     border-radius: 5px;
     left: 20%;
+    opacity: 0.8;
 
     transform: rotate(45deg);
     animation: float 20s ease infinite;
@@ -17,6 +20,8 @@ export const IntroductionWrapper = styled.section`
 
     .floatingSquare {
       position: fixed;
+      width: 345px;
+      height: 345px;
     }
   }
 

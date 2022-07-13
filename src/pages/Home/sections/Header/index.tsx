@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 function Header({ showNav }: HeaderProps) {
-  const nav = ["about", "work", "skills", "contact"];
+  const nav = ["about", "experience", "contact"];
   const { width } = useWindowSize();
 
   const [scrolledToTop, setScrolledToTop] = useState(true);

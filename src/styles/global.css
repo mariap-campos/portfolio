@@ -69,7 +69,9 @@ body,
 
 .section {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  /* margin: 0 0 15% 0; */
+
   display: flex;
   justify-content: center;
   align-items: center;

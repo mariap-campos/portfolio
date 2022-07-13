@@ -20,7 +20,8 @@ export const Email = styled.div`
   align-items: center;
   width: 40px;
 
-  button {
+  a {
+    color: var(--light) !important;
     background: none;
     border: none;
     font-size: 14px;
@@ -47,7 +48,7 @@ export const Email = styled.div`
 
     &:hover {
       transition: all 0.25s ease-out;
-      color: var(--green);
+      color: var(--green) !important;
     }
   }
 `;
@@ -57,7 +58,8 @@ export const Nav = styled.nav`
   margin-left: 5px;
   margin-bottom: 10px;
 
-  button {
+  a {
+    color: var(--light) !important;
     background: none;
     border: none;
     display: flex;
@@ -71,12 +73,11 @@ export const Nav = styled.nav`
     &:hover {
       transition: all 0.25s ease-out;
       transform: translateY(-3px);
-      color: var(--green);
+      color: var(--green) !important;
+    }
+
+    &::before {
+      display: none;
     }
   }
-
-  /* .round {
-    background: var(--light);
-    border-radius: 60px;
-  } */
 `;

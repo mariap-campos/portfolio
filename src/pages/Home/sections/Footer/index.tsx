@@ -1,62 +1,57 @@
 import React from "react";
-import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
-import { FaLinkedinIn, FaSpotify } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 
-import Line from "../Line";
+import { FaLinkedinIn, FaSpotify } from "react-icons/fa";
+import { AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
+import useWindowSize from "../../../../hooks/useWindowSize";
 import * as S from "./styled";
 
-function Sideline() {
+function Footer() {
+  const { width } = useWindowSize();
   return (
-    <>
-      <S.Socials>
+    <S.FooterWrapper>
+      {width! < 768 && (
         <S.Nav>
           <a
             href="https://www.linkedin.com/in/maria-p-campos/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedinIn size={24} />
+            <FaLinkedinIn size={30} />
           </a>
           <a
             href="https://github.com/mariap-campos"
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineGithub size={24} />
+            <AiOutlineGithub size={30} />
           </a>
           <a
             href="mailto:mpfc.maria@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <HiOutlineMail size={24} />
+            <HiOutlineMail size={30} />
           </a>
           <a
             href="https://www.instagram.com/mashpaula/"
             target="_blank"
             rel="noreferrer"
           >
-            <AiOutlineInstagram size={24} />
+            <AiOutlineInstagram size={30} />
           </a>
           <a
             href="https://open.spotify.com/user/mashpaula"
             target="_blank"
             rel="noreferrer"
           >
-            <FaSpotify size={24} />
+            <FaSpotify size={30} />
           </a>
         </S.Nav>
-        <Line height="120px" start horizontal={false} />
-      </S.Socials>
-      <S.Email>
-        <a href="mailto:mpfc.maria@gmail.com" target="_blank" rel="noreferrer">
-          mpfc.maria@gmail.com
-        </a>
-        <Line height="120px" start horizontal={false} />
-      </S.Email>
-    </>
+      )}
+      &lt;/&gt; by mashpaula
+    </S.FooterWrapper>
   );
 }
 
-export default Sideline;
+export default Footer;

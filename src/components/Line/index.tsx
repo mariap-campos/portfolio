@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BsFillDiamondFill } from "react-icons/bs";
 import * as S from "./styled";
 
