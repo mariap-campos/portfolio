@@ -1,46 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="top"></div>
 
-## Available Scripts
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
 
-### `npm start`
+<h1 align="center">
+<br>
+  <img src="https://i.im.ge/2022/07/14/FQg01m.png" alt="<m/>" width="120">
+<br>
+<br>
+&lt;mashapula /&gt;
+</h1>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <p align="center">
+    Code for my personal website.
+    <br />
+     ·
+    <a href="https://mashpaula.vercel.app">Visit!</a>
+    ·
 
-### `npm test`
+  </p>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is a simple landing page that i made to represent me as a coder. After all, whats is better as resume for a software developer than a software?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I intend to increment it as time goes on, possibly add a projects section, but for now is just a simple page with a few extra informations about me, my formation and my work experiences.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [![React][React.js]][React-url]
+*  [![Typescript][Typescript]][Typescript-url]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- GETTING STARTED -->
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Clone the repo
+   ```sh
+   git clone https://github.com/mariap-campos/portfolio
+   ```
+3. Install yarn packages
+   ```sh
+   yarn
+   ```
+3. run project
+   ```sh
+   yarn start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Maria p. Campos-  - mpfc.maria@gmail.com
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/mariap-campos/portfolio/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/maria-p-campos/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://www.typescriptlang.org
