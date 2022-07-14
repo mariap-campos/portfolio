@@ -6,6 +6,7 @@ import logo from "../../../../assets/img/mLogo.png";
 
 import * as S from "./styled";
 import useWindowSize from "../../../../hooks/useWindowSize";
+import Resume from "../../../../assets/mariap-campos-curriculo.pdf";
 
 interface HeaderProps {
   showNav: boolean;
@@ -51,13 +52,9 @@ function Header({ showNav }: HeaderProps) {
             <strong>0{index + 1}.</strong> {item}
           </S.NavLink>
         ))}
-        <button
-          type="button"
-          className="resume"
-          onClick={() => console.log("open resume")}
-        >
+        <a className="resume" href={Resume} target="_blank" rel="noreferrer">
           Resume
-        </button>
+        </a>
       </S.Nav>
     </S.HeaderWrapper>
   );

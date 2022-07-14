@@ -8,7 +8,7 @@ function Introduction() {
     <S.IntroductionWrapper className="section">
       <div className="floatingSquare" />
       <S.Container className="container">
-        <strong>Hello, there! i&apos;m</strong>
+        <strong>Hello, there! I&apos;m</strong>
         <h1>Maria P. Campos</h1>
         <p>
           I&apos;m a software developer in constant development myself. Very

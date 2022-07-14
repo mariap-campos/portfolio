@@ -93,7 +93,7 @@ function Work() {
       name: "sambatech",
       position: "Junior Front End Developer",
       site: "https://sambatech.com",
-      timeframe: "March 2022 - current",
+      timeframe: "April 2021 - March 2022",
       topics: [
         "Worked in a livestream entertainment project called Lounge for Ambev.",
         "Was in charge of the front-end of the React project, creating new features, implementing bug fixes and unit testing the application.",
