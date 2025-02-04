@@ -195,6 +195,7 @@ export const Experience = styled.div`
   }
 
   .icons {
+    margin-top: 20px;
     > svg {
       margin-right: 10px;
       fill: var(--green);

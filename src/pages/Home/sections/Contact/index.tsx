@@ -22,22 +22,13 @@ function Contact() {
           <div>
             <h1>Let's Chat!</h1>
             <p>
-              I'm not currently looking for new work opportunities, however, i
-              am always open for a nice chat! Feel free to send me a{" "}
+              I am always open for a nice chat! Feel free to send me a{" "}
               <a
                 href="mailto:mpfc.maria@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 email
-              </a>
-              , follow me on {"  "}
-              <a
-                href="https://www.instagram.com/mashpaula/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                instagram
               </a>{" "}
               or connect on{" "}
               <a
@@ -47,7 +38,7 @@ function Contact() {
               >
                 linkedin
               </a>
-              ! I'm also currently working on improving my{" "}
+              ! I'm always working on improving my{" "}
               <a
                 href="https://www.linkedin.com/in/maria-p-campos/"
                 target="_blank"
@@ -55,7 +46,8 @@ function Contact() {
               >
                 github
               </a>{" "}
-              so if you wanna trade advice or talk about code i'm all ears.
+              and tech knowledge, so if you wanna trade advice or talk about
+              code i'm all ears.
             </p>
             <a
               className="button"

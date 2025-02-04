@@ -77,15 +77,15 @@ function Work() {
 
   const experience = [
     {
-      name: "ambevtech",
-      position: "Developer IV",
-      site: "https://www.ambevtech.com.br",
+      name: "ab-inbev",
+      position: "Senior Software Engineer",
+      site: "https://www.ab-inbev.com/",
       timeframe: "March 2022 - current",
+
       topics: [
-        "Currently working in a rewards project made with React + Typescript.",
-        "In charge of the front-end development of the application and backoffice for said application. Building the project from the ground up and ensuring a high test coverage.",
-        "Participantign in the refinement process of the projects new possible features, offering a techinal lens to the questions brought to the table",
-        "Working with Microsoft Azure environment, creating build and pr-review pipelines as well as release automations.",
+        "Led the development for Zé Delivery's rewards program, ensuring a responsive and high-performance application that enhanced user engagement and satisfaction.",
+        "Working on the continuous enhancement of the rewards program, leading feature concept development",
+        "Engaged in expanding the program to other countries",
       ],
       icons: renderAmbevIcons,
     },

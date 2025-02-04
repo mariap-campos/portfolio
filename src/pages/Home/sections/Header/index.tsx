@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 import Line from "../../../../components/Line";
-import logo from "../../../../assets/img/mLogo.png";
+// import logo from "../../../../assets/img/mLogo.png";
 
 import * as S from "./styled";
 import useWindowSize from "../../../../hooks/useWindowSize";
@@ -13,11 +13,12 @@ interface HeaderProps {
 }
 
 function Header({ showNav }: HeaderProps) {
-  const nav = ["about", "experience", "contact"];
+  const nav = ["home", "about", "experience", "contact"];
   const { width } = useWindowSize();
 
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
+  const logo = "<m/>";
 
   const handleScroll = () => {
     setScrolledToTop(window.pageYOffset < 50);
@@ -35,7 +36,7 @@ function Header({ showNav }: HeaderProps) {
     <S.HeaderWrapper scrolledToTop={scrolledToTop} showNav={showNav}>
       <S.LogoWrapper>
         <Line end width={width! > 768 ? "100px" : "20px"} />
-        <img src={logo} alt="<m/>" />
+        <h1>{logo}</h1>
       </S.LogoWrapper>
       {width! < 768 && (
         <button

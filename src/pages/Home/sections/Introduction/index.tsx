@@ -5,7 +5,7 @@ import * as S from "./styled";
 
 function Introduction() {
   return (
-    <S.IntroductionWrapper className="section">
+    <S.IntroductionWrapper className="section" id="home">
       <div className="floatingSquare" />
       <S.Container className="container">
         <strong>Hello, there! I&apos;m</strong>
@@ -13,8 +13,8 @@ function Introduction() {
         <p>
           I&apos;m a software developer in constant development myself. Very
           passionate about programming, design, music and nerdy things.
-          Currently i&apos;m working rewards projects for{" "}
-          <a href="https://ambevtech.com.br">@ambevtech</a>
+          Currently i&apos;m working in{" "}
+          <a href="https://www.ab-inbev.com/">@ab-inbev</a>
         </p>
         <Line start width="80%" />
       </S.Container>

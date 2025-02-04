@@ -5,7 +5,8 @@
   --grey: #9d9ca0;
   /* --grey: #8e8d91da; */
   --light: #d9d9d9;
-  --green: #77b296;
+  /* --green: #bfa89e; */
+  --green: #d9bbb2;
 }
 html {
   scroll-behavior: smooth;
@@ -61,10 +62,8 @@ body,
 #root {
   color: var(--light);
   overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  display: none;
+  scrollbar-color: var(--dark-grey) var(--black);
+  scrollbar-width: thin;
 }
 
 .section {

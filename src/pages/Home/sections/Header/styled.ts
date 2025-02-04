@@ -75,6 +75,11 @@ export const HeaderWrapper = styled.header<HeaderWrapperProps>`
 export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  h1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+    color: var(--green);
+  }
 
   img {
     transition: all 0.3s ease;

@@ -33,13 +33,6 @@ function Sideline() {
             <HiOutlineMail size={24} />
           </a>
           <a
-            href="https://www.instagram.com/mashpaula/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiOutlineInstagram size={24} />
-          </a>
-          <a
             href="https://open.spotify.com/user/mashpaula"
             target="_blank"
             rel="noreferrer"

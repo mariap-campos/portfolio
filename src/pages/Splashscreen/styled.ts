@@ -13,9 +13,9 @@ export const Splash = styled.div`
   display: flex;
   align-items: center;
   h1 {
-    min-height: 6rem;
+    min-height: 7rem;
     width: fit-content;
-    font-size: 6rem;
+    font-size: 7rem;
     color: var(--green);
     border-right: 4px solid var(--green);
     white-space: nowrap;
@@ -63,21 +63,21 @@ export const Splash = styled.div`
 
   @keyframes bump {
     0% {
-      font-size: 6rem;
+      font-size: 7rem;
     }
     35% {
       border-right: none;
-      font-size: 7.5rem;
+      font-size: 8rem;
       opacity: 1;
     }
     45% {
       border-right: none;
-      font-size: 7.5rem;
+      font-size: 8rem;
       opacity: 1;
     }
     100% {
       border-right: none;
-      font-size: 6rem;
+      font-size: 7rem;
       opacity: 0;
     }
   }
