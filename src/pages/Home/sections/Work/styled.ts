@@ -46,6 +46,28 @@ export const Container = styled.div`
     font-size: 18px;
     color: var(--grey);
   }
+
+  .react-calendar-heatmap .color-scale-1 {
+    fill: #d9bbb2;
+  }
+  .react-calendar-heatmap .color-scale-2 {
+    fill: #cc968f;
+  }
+  .react-calendar-heatmap .color-scale-3 {
+    fill: #be716c;
+  }
+  .react-calendar-heatmap .color-scale-4 {
+    fill: #b14c49;
+  }
+  .react-calendar-heatmap .color-scale-5 {
+    fill: rgb(129, 55, 52);
+  }
+  .react-calendar-heatmap .color-empty {
+    fill: var(--black);
+  }
+  .react-calendar-heatmap .color-weekend {
+    fill: var(--dark-grey);
+  }
 `;
 
 export const Title = styled.div`
@@ -73,10 +95,14 @@ export const Title = styled.div`
   }
 `;
 
+export const Box = styled.div`
+  margin-top: 70px;
+`;
+
 export const Work = styled.div`
   display: flex;
   margin-top: 40px;
-  height: 50vh;
+  // height: 50vh;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

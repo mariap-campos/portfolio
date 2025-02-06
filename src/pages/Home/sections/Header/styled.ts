@@ -4,6 +4,9 @@ interface HeaderWrapperProps {
   scrolledToTop: boolean;
   showNav: boolean;
 }
+interface LogoWrapperProps {
+  scrolledToTop: boolean;
+}
 
 export const HeaderWrapper = styled.header<HeaderWrapperProps>`
   position: fixed;
@@ -66,31 +69,32 @@ export const HeaderWrapper = styled.header<HeaderWrapperProps>`
     background: none;
     border: none;
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     z-index: 10;
   }
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled.div<LogoWrapperProps>`
   display: flex;
   align-items: center;
   h1 {
-    font-size: 4rem;
+    transition: all 0.3s ease;
+    font-size: 2.5rem;
     margin-left: 1rem;
     color: var(--green);
   }
 
-  img {
-    transition: all 0.3s ease;
-    margin-left: 10px;
-    width: 120px;
-  }
+  ${(props) =>
+    props.scrolledToTop &&
+    css`
+      h1 {
+        transition: all 0.3s ease;
+        font-size: 4rem;
+      }
+    `};
 
   @media screen and (max-width: 768px) {
-    img {
-      width: 80px !important;
-    }
   }
 `;
 

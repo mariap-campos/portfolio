@@ -68,7 +68,8 @@ body,
 
 .section {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
+  margin-bottom: 20px;
   /* margin: 0 0 15% 0; */
 
   display: flex;

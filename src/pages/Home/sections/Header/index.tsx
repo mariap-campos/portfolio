@@ -34,7 +34,7 @@ function Header({ showNav }: HeaderProps) {
 
   return (
     <S.HeaderWrapper scrolledToTop={scrolledToTop} showNav={showNav}>
-      <S.LogoWrapper>
+      <S.LogoWrapper scrolledToTop={scrolledToTop}>
         <Line end width={width! > 768 ? "100px" : "20px"} />
         <h1>{logo}</h1>
       </S.LogoWrapper>
